@@ -1,0 +1,60 @@
+body {
+  background: #e7f0ff;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.screen {
+  width: 420px;
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#map, #mapTracking {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.back {
+  background: #999;
+}
+
+.routeBox {
+  background: #f3f6ff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #007bff;
+}

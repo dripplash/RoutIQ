@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RoutIQ - Repartidor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="screen">
+
+  <button class="backBtn" onclick="location.href='index.html'">← Volver</button>
+
+  <h2>Panel Repartidor</h2>
+
+  <label>Origen:</label>
+  <input id="origin" placeholder="Ej: Av. Providencia 123, Santiago">
+
+  <label>Destino:</label>
+  <input id="destination" placeholder="Ej: Mall Plaza Egaña">
+
+  <button id="btnVerRutas">Ver rutas alternativas</button>
+  <button id="btnGenerarCodigo">Generar código de seguimiento</button>
+
+  <p id="trackingCode" class="info"></p>
+
+</div>
+
+<script src="js/repartidor.js"></script>
+
+<!-- API KEY REAL -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEudk62VUQhWxRLn5VHvOh1qtX4fbiwho"></script>
+
+</body>
+</html>

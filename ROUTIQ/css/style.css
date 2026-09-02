@@ -1,0 +1,165 @@
+/* -------------------------------------------------- */
+/*  ESTILO GLOBAL PREMIUM (Opción A) */
+/* -------------------------------------------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(145deg, #d8e9ff, #bcd8ff);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Contenedor tipo tarjeta */
+.screen, .inicio-container {
+  width: 400px;
+  background: #ffffff;
+  padding: 25px;
+  margin-top: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  animation: fadeSlide 0.6s ease-out;
+}
+
+/* Animación al aparecer */
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Logo general */
+.logo-inicio, .logo-math {
+  width: 130px;
+  height: 130px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+/* Títulos */
+h1, h2, h3 {
+  margin: 5px 0;
+  color: #003f8f;
+}
+
+/* Subtítulos */
+.inicio-subtitle {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Botones Premium */
+button, .inicio-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 14px;
+  background: #007bff;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  background: #005fcc;
+  transform: scale(1.02);
+}
+
+/* Botón volver */
+.backBtn {
+  width: 150px;
+  background: #555;
+}
+
+.backBtn:hover {
+  background: #333;
+}
+
+/* Inputs Premium */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #eef3ff;
+  font-size: 15px;
+}
+
+/* Error login */
+.login-error {
+  color: #d60000;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Tarjetas (como rutas) */
+.routeBox {
+  padding: 15px;
+  text-align: left;
+  background: #eef3ff;
+  border-radius: 12px;
+  border-left: 6px solid #1a73e8;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+/* Mapa */
+#map, #mapTracking {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Panel Premium (Waze-style) */
+.panel-waze {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(25, 25, 25, 0.9);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 330px;
+  text-align: center;
+}
+
+.panel-waze.show {
+  opacity: 1;
+}
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
